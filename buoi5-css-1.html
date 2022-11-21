@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#div_tong{
+			width: 100%;
+			height: 700px;
+		}
+
+		/*div_tren*/
+		#div_tren{
+			width: 100%;
+			height: 70px;
+		}
+		#div_tren > .trai{
+			width: 50%;
+			height: 70px;
+			float: left;
+		}
+		#div_tren > .phai{
+			width: 50%;
+			height: 70px;
+			float: left;
+		}
+		#div_tren > .phai > .tren{
+			width: 100%;
+			height: 35px;
+			text-align: right;
+		}
+		#div_tren > .phai > .duoi{
+			width: 100%;
+			height: 35px;
+			text-align: right;
+		}
+		#div_tren > .phai > .duoi > .tren{
+			width: 100%;
+			height: 50%;
+			text-align: right;
+		}
+		#div_tren > .phai > .duoi > .duoi{
+			width: 100%;
+			height: 50%;
+			text-align: right;
+		}
+
+		/*div_giua*/
+		#div_giua{
+			width: 100%;
+			height: 15px;
+			background-image: url("./images/nen.gif");
+		}
+
+		/*div_duoi*/
+		#div_duoi{
+			width: 100%;
+			height: 600px;
+		}
+		#div_duoi > .trai{
+			width: 20%;
+			height: 600px;
+			background-image: url("./images/xanhlacaynhat.png");
+			float: left;
+		}
+		#div_duoi > .trai > .tren{
+			width: 100%;
+			height: 160px;
+		}
+		#div_duoi > .trai > .giua{
+			width: 10%;
+			height: 100px;
+			float: right;
+		}
+		#div_duoi > .trai > .duoi{
+			width: 100%;
+			height: 440px;
+			border-right: 3px solid green;
+		}
+		#div_duoi > .giua_1{
+			width: 10%;
+			height: 600px;
+			float: left;
+		}
+		#div_duoi > .giua_1 > .tren{
+			width: 100%;
+			height: 160px;
+			border-left: 3px solid green;
+		}
+		#div_duoi > .giua_1 > .duoi{
+			width: 100%;
+			height: 440px;
+		}
+		#div_duoi > .giua_2{
+			width: 55%;
+			height: 600px;
+			float: left;
+			text-align: left;
+		}
+		#div_duoi > .giua_2 > .phai{
+			width: 40%;
+			height: 200px;
+			float: right;
+		}
+		#div_duoi > .giua_2 > .phai > .tren{
+			width: 100%;
+			height: 30px;
+		}
+		#div_duoi > .giua_2 > .phai > .giua{
+			width: 100%;
+			height: 50px;
+			text-align: center;
+		}
+		#div_duoi > .giua_2 > .phai > .duoi{
+			width: 100%;
+			height: 40px;
+			text-align: center;
+		}
+
+		#div_duoi > .phai{
+			width: 15%;
+			height: 600px;
+			float: left;
+		}
+		#div_duoi > .phai > .tren{
+			width: 100%;
+			height: 150px;
+			float: left;
+		}
+		#div_duoi > .phai > .tren > .tren{
+			width: 100%;
+			height: 30px;
+		}
+		#div_duoi > .phai > .tren > .giua{
+			width: 100%;
+			height: 110px;
+			background-image: url("./images/xanhlacaynhat.png");
+			text-align: center;
+		}
+		#div_duoi > .phai > .tren > .duoi{
+			width: 100%;
+			height: 10px;
+		}
+
+		#div_duoi > .phai > .giua{
+			width: 100%;
+			height: 50px;
+			border-left: 5px dotted green;
+			float: left;
+		}
+
+		#div_duoi > .phai > .duoi{
+			width: 100%;
+			height: 400px;
+			border-left: 5px dotted green;
+			text-align: center;
+			float: left;
+		}
+		#div_duoi > .phai > .duoi > .trai{
+			width: 20%;
+			height: 400px;
+			float: left;
+		}
+		#div_duoi > .phai > .duoi > .giua{
+			width: 60%;
+			height: 400px;
+			float: left;
+		}
+
+
+		.gach_dung{
+			border-left: 1px solid black;
+		}
+		.xanh_nhat{
+			background: black;
+		}
+	</style>
+</head>
+<body>
+	<div id="div_tong">
+		<div id="div_tren">
+			<div class="trai">
+				<img src="./images/logo.gif" style="width: 48%; height: 100px;">
+			</div>
+			<div class="phai">
+				<div class="tren">
+					<form>
+						<select>
+							<option>Hội hoa Lan & Cây cảnh TPHCM</option>
+							<option>Hội hoa Dâm bụt & Cây cảnh TPHCM</option>
+							<option>Hội hoa Mười giờ & Cây cảnh TPHCM</option>
+						</select>
+						<button>go</button>
+					</form>
+				</div>
+				<div class="duoi">
+					<div class="tren"></div>
+					<div class="duoi">
+						<img src="./images/n_hoavacc.gif" width="30%" height="100%">
+						<img src="./images/n_ttuc.gif" class="gach_dung" width="15%" height="100%">
+						<img src="./images/n_hopthu.gif" class="gach_dung" width="15%" height="100%">
+						<img src="./images/n_hvien.gif" class="gach_dung" width="20%" height="100%">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="div_giua"></div>
+		<div id="div_duoi">
+			<div class="trai">
+				<div class="tren">
+					<img src="./images/tintuc_bientrai.gif" width="80%">
+				</div>
+				<div class="giua">
+					<img src="./images/buom1.gif" width="350%">
+				</div>
+				<div class="duoi">
+					<img src="./images/Hoavang.gif" width="130%">
+				</div>
+			</div>
+			<div class="giua_1">
+				<div class="tren">
+					<img src="./images/mau.jpg">
+				</div>
+				<div class="duoi">
+				</div>
+			</div>
+			<div class="giua_2">
+				<div class="phai">
+					<div class="tren"></div>
+					<div class="giua">
+						<img src="./images/buom4.gif" height="160" width="70%">
+					</div>
+					<div class="duoi"></div>
+				</div>
+				<font size="5">
+					<b>
+						Muôn hoa đua sắc
+					</b>
+				</font>
+				<br><br><br>
+				Đã là hoa thì hoa nào cũng đẹp. Kể từ những đoá hoa dân dã giản dị bình thường. Hoa sim, hoa mua tím biếc sườn đồi. Hoa cà tím biếc vườn quê. Hoa lục bình tím biếc trên dòng sông. Hoa súng tím biếc ao làng. Hoa xoan tím biếc những chiều xóm vắng…. Hoa gạo đỏ đầu làng, hoa phượng đỏ trời góc phố. Hoa mào gà, hoa dong riềng đỏ góc vườn ai. Hoa cau, hoa dừa trắng phau lưng trời. Những loài hoa dân giả muôn màu muôn sắc cũng đẹp huống chi là các loài hoa quý phái.
+				<br><br>
+				Một trong những loài hoa quý phái là hoa lan. "Vua thưởng lan, quan thưởng trà". Cái hương lan - " cái hương thuỷ quái gì mà mê đắm lòng người đến thế". Phong lan thơm sực nức, nồng nàn, gần gũi. Địa lan thanh cao, nhẹ nhõm, lúc thắm thiết, sực nức, lúc nhạt nhoà xa xăm. Đoá bạch ngọc khi nở có màu sáng như chiếc hài của thần vệ nữ tự ngày xưa.
+				<br><br>
+				Hoa mai có nhiều loài. Từ ngũ đài hoa - năm cánh vàng rực rỡ đến hoàng tỉ trên 30 cánh. Hoa mai đẹp từ gốc đến cành, sống lâu bền, xếp vào hàng cổ thụ "lão mai độc thọ nhất chi vinh" (thơ cổ). Hoa mai không phô sắc hương mà khiêm tốn dịu dàng, tượng trưng cho cốt cách của người quân tử, chịu được cái giá rét của mùa đông để nở vào một sớm xuân hồng.
+				<br><br>
+				Hoa cúc vàng trong hàng tứ quý " tùng, cúc, trúc, mai" tượng trưng cho mặt trời, cho quyền lực. Cúc đại đoá bông to, cành cong lộng lẫy sang trọng, cúc vạn thọ giản dị, bền lâu. Hoa cúc là loại "diệp bất li chi, hoa vô lạc địa", lá cúc không bao giờ rời khỏi cành dẫu đã héo khô, hoa tàn cánh không rụng như người quân tử không xa rời lý tưởng. 
+				<br><br>
+				Loài hao mang biểu tượng của mùa xuân là hoa đào. Những cánh hoa đào rưng rưng khoe sắc, màu hồng phơn phớt hay hồng đậm xen trong lá non như vẻ e ấp ngại ngùng như người thiếu nữ. Hoa đào như muôn cánh bướm hồng rung rinh trong gió, khoe sắc trong nắng xuân. 
+			</div>
+			<div class="phai">
+				<div class="tren">
+					<div class="tren">
+						<img src="./images/thamgia.gif" width="100%" height="100%">
+					</div>
+					<div class="giua">
+						<form>
+							<font size="2">
+								Họ tên<br>
+								<input type="name" style="width: 60%;"><br>
+								Mã số<br>
+								<input type="password" style="width: 60%;"><br>
+								<input type="image" src="./images/ok.gif" alt="Submit" style="width: 50%">
+							</font>
+						</form>
+					</div>
+					<div class="duoi">
+						<img src="./images/quen.gif" width="100%">
+					</div>
+				</div>
+				<div class="giua"></div>
+				<div class="duoi">
+					<div class="trai"></div>
+					<div class="giua">
+						<img src="./images/h2.jpg" width="100%" height="400">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
