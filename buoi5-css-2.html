@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		/*div_tong*/
+		#div_tong{
+			width: 100%;
+			height: 700px;
+		}
+
+		/*div_tren*/
+		#div_tren{
+			width: 100%;
+			height: 35px;
+			background-image: url("./images/buoi5-2/mau tim.jpeg");
+		}
+		#div_tren > .trai{
+			width: 50%;
+			height: 35px;
+			float: left;
+		}
+		#div_tren > .trai > .tren{
+			width: 100%;
+			height: 5px;
+		}
+		#div_tren > .trai > .giua{
+			width: 100%;
+			text-align: center;
+			font-family: Cursive;
+			height: 15px;
+		}
+		#div_tren > .trai > .duoi{
+			width: 100%;
+			height: 15px;
+		}
+		#div_tren > .phai{
+			width: 50%;
+			height: 35px;
+			float: left;
+		}
+		#div_tren > .phai > .trai{
+			width: 80%;
+			height: 35px;
+			float: left;
+		}
+		#div_tren > .phai > .trai > .trai{
+			width: 52%;
+			height: 35px;
+			float: left;
+		}
+		#div_tren > .phai > .trai > .trai > .tren{
+			width: 100%;
+			height: 25px;
+		}
+		#div_tren > .phai > .trai > .trai > .duoi{
+			width: 100%;
+			height: 10px;
+			text-align: center;
+		}
+		#div_tren > .phai > .phai{
+			width: 20%;
+			height: 35px;
+			float: left;
+		}
+		
+
+		/*div_duoi*/
+		#div_duoi{
+			width: 100%;
+			height: 650px;
+		}
+
+		/*div_duoi > .trai*/
+		#div_duoi > .trai{
+			width: 35%;
+			height: 670px;
+			float: left;
+			background: white;
+		}
+		#div_duoi > .trai > .tren{
+			width: 100%;
+			height: 50px;
+		}
+		#div_duoi > .trai > .giua{
+			width: 100%;
+			height: 420px;
+		}
+		#div_duoi > .trai > .giua > .trai{
+			width: 25%;
+			height: 420px;
+			float: left;
+		}
+		#div_duoi > .trai > .giua > .phai{
+			width: 75%;
+			height: 420px;
+			float: left;
+		}
+		#div_duoi > .trai > .giua > .phai > .tren{
+			width: 100%;
+			height: 40px;
+			text-align: center;
+			background-image: url("./images/buoi5-2/mau tim.jpeg");
+		}
+		#div_duoi > .trai > .giua > .phai > .duoi{
+			width: 100%;
+			height: 380px;
+			overflow: scroll;
+		}
+		#div_duoi > .trai > .duoi{
+			width: 100%;
+			height: 180px;
+			background-image: url("./images/buoi5-2/mau tim.jpeg");
+		}
+		#div_duoi > .trai > .duoi > .tren{
+			width: 100%;
+			height: 15px;
+		}
+		#div_duoi > .trai > .duoi > .giua{
+			width: 100%;
+			height: 150px;
+			text-align: right;
+		}
+		#div_duoi > .trai > .duoi > .duoi{
+			width: 100%;
+			height: 15px;
+		}
+
+		/*div_duoi > .giua_1*/
+		#div_duoi > .giua_1{
+			width: 15%;
+			height: 650px;
+			float: left;
+			background: white;
+		}
+		#div_duoi > .giua_1 > .tren{
+			width: 100%;
+			height: 50px;
+		}
+		#div_duoi > .giua_1 > .duoi{
+			width: 100%;
+			height: 600px;
+			border-top: 5px dotted purple;
+		}
+		#div_duoi > .giua_1 > .duoi > .phai{
+			width: 70%;
+			height: 600px;
+			float: right;
+			border-left: 5px dotted purple;
+		}
+		#div_duoi > .giua_1 > .duoi > .phai > .tren{
+			width: 100%;
+			height: 170px;
+		}
+		#div_duoi > .giua_1 > .duoi > .phai > .duoi{
+			width: 100%;
+			height: 430px;
+		}
+
+		/*div_duoi > .giua_2*/
+		#div_duoi > .giua_2{
+			width: 19%;
+			height: 650px;
+			float: left;
+		}
+		#div_duoi > .giua_2 > .tren{
+			width: 100%;
+			height: 50px;
+			text-align: center;
+		}
+		#div_duoi > .giua_2 > .giua{
+			width: 100%;
+			height: 230px;
+		}
+		#div_duoi > .giua_2 > .duoi{
+			width: 100%;
+			height: 370px;
+			text-align: center;
+		}
+		
+
+		/*div_duoi > .giua_3*/
+		#div_duoi > .giua_3{
+			width: 24%;
+			height: 650px;
+			float: left;
+			background-image: url("./images/buoi5-2/mau_vang_nghe.jpeg");
+		}
+		#div_duoi > .giua_3 > .trai{
+			width: 83%;
+			height: 650px;
+			background: white;
+		}
+		#div_duoi > .giua_3 > .trai >.tren{
+			width: 100%;
+			height: 50px;
+			text-align: right;
+		}
+		#div_duoi > .giua_3 > .trai >.giua{
+			width: 100%;
+			height: 450px;
+		}
+		#div_duoi > .giua_3 > .trai >.duoi{
+			width: 100%;
+			height: 200px;
+			text-align: left;
+		}
+		#div_duoi > .giua_3 > .phai{
+			width: 17%;
+			height: 50px;
+		}
+
+		/*div_duoi > .phai*/
+		#div_duoi > .phai{
+			width: 7%;
+			height: 650px;
+			float: left;
+		}
+		#div_duoi > .phai > .trai{
+			width: 35%;
+			height: 650px;
+			float: left;
+			background-image: url("./images/buoi5-2/vang nghe dam.jpeg");
+		}
+		#div_duoi > .phai > .phai{
+			width: 65%;
+			height: 650px;
+			float: left;
+		}
+
+		.bd{
+			border-left: 2px solid black;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div id="div_tong">
+		<div id="div_tren">
+			<div class="trai">
+				<div class="tren"></div>
+				<div class="giua">
+					<table width="100%">
+						<tr>
+							<td class="bd">
+								<font size="2">
+									<b>
+										Truyền thuyết
+									</b>
+								</font>
+							</td>
+							<td class="bd">
+								<font size="2">
+									<b>
+										Thế giới Hoa
+									</b>
+								</font>
+							</td>
+							<td class="bd">
+								<font size="2">
+									<b>
+										Góc Hoa
+									</b>
+								</font>
+							</td>
+							<td class="bd">
+								<font size="2">
+									<b>
+										Thiệp Hoa ...
+									</b>
+								</font>
+							</td>
+							<td class="bd">
+								<font size="2">
+									<b>
+										Tham gia Hội Hoa Tp
+									</b>
+								</font>
+							</td>
+							<td class="bd"></td>
+						</tr>
+					</table>
+				</div>
+				<div class="duoi"></div>
+			</div>
+			<div class="phai">
+				<div class="trai">
+					<div class="trai">
+						<div class="tren"></div>
+						<div class="duoi">
+							<img src="./images/buoi5-2/buom1.gif" width="35%">
+						</div>
+					</div>
+				</div>
+				<div class="phai"></div>
+			</div>
+		</div>
+		<div id="div_duoi">
+			<div class="trai">
+				<div class="tren"></div>
+				<div class="giua">
+					<div class="trai"></div>
+					<div class="phai">
+						<div class="tren">
+							<select style="width: 70%;">
+								<option>http://www.ClbLanTp.com.vn</option>
+							</select>
+						</div>
+						<div class="duoi">
+							<br>
+							<font color="purple" size="5">
+								<b>
+									HOA MỘC LAN
+								</b>
+							</font>
+							<br><br>
+							Ở Nhật Bản có một người con gái tên là Cây cỏ mồ côi cả cha lẫn mẹ. Nhà nghèo, ngay từ khi còn nhỏ nàng đã phải tự đi làm để kiếm sống.<br><br>
+							Nàng phải làm hoa giấy đem ra phố bán. Nhưng hoa bán đã nhiều, mà tiền thu về chẳng đáng là bao. Khi đã ra dáng một thiếu nữ. Cây cỏ cũng không có đủ tiền sắm nổi một bộ kimôno mà các cô con nhà quý phái vẫn mặc.<br><br>
+							Một đêm nọ khi Cây cỏ đang mải làm việc trong phòng của mình, bỗng có một con vẹt bay đến đậu trên bậc cửa sổ. Đôi cánh màu xanh của nó đã nhợt nhạt, có lẽ nó đã già song vẫn còn đủ minh mẫn và biết nói tiếng người.<br><br>
+							- Đừng đuổi ta, ta sẽ tiết lo cho nàng một điều bí mật về cách làm giàu.<br><br>
+							- Vẹt yêu quý ơi, cớ sao ta lại đuổi mi – Cây cỏ buồn bã mỉm cười - ở đời ta chẳng còn biết thộ lộ tâm tình với ai, thế mà mi lại nói được tiếng người. Cứ ở lại đây, cùng chia nghèo, sẻ khó với ta, còn sự giàu sang, phú qúy tốt nhất là chẳng nên màng tới, vì ta rất xa lạ với chuyện ấy.<br><br>
+							- Đa tạ Cây cỏ tốt bụng - Vẹt gật gù- Trước khi đi tìm chủ mới, ta đã chăm chú theo dỏi các cô gái bán hoa, và ta đã thấy nàng tặng bông hoa đẹp nhất của mình cho một cô gái nghèo như thế nào rồi. Cô gái nghèo ấy không có tiền nhưng lại rất muốn làm cho người bà ốm yếu của mình được thanh thản hài lòng. Nhưng vì sao ngươi lại phải đi t́m chủ mới? – Cây cỏ hỏi - Phải chăng chủ củ không tốt với mi?
+						</div>
+					</div>
+				</div>
+				<div class="duoi">
+					<div class="tren"></div>
+					<div class="giua">
+						<img src="./images/buoi5-2/la1.jpg" width="27%" height="150">
+						<img src="./images/buoi5-2/la2.jpg" width="27%"  height="150">
+						<img src="./images/buoi5-2/la3.jpg" width="27%"  height="150">
+					</div>
+					<div class="duoi"></div>
+				</div>
+			</div>
+			<div class="giua_1">
+				<div class="tren"></div>
+				<div class="duoi">
+					<div class="phai">
+						<div class="tren"></div>
+						<div class="duoi">
+							<img src="./images/buoi5-2/truyenthuyet.gif">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="giua_2">
+				<div class="tren">
+					<img src="./images/buoi5-2/HoiLan.gif" width="75%">
+				</div>
+				<div class="giua"></div>
+				<div class="duoi">
+					<img src="./images/buoi5-2/hoa.jpg" width="100%" height="370">
+				</div>
+			</div>
+			<div class="giua_3">
+				<div class="trai">
+					<div class="tren">
+						<img src="./images/buoi5-2/mau.gif">
+					</div>
+					<div class="giua"></div>
+					<div class="duoi">
+						<img src="./images/buoi5-2/buom4.gif" width="125%" height="125%">
+					</div>
+				</div>
+				<div class="phai"></div>
+			</div>
+			<div class="phai">
+				<div class="trai"></div>
+				<div class="phai">
+					<img src="./images/buoi5-2/lephai.jpg" width="100%" height="100%">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
