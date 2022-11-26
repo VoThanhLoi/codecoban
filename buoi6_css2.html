@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bai 5.2 - My Thuat</title>
+	<style type="text/css">
+		#div_tong{
+			width: 100%;
+			height: 600px;
+		}
+		#div_tong > .trai{
+			width: 20%;
+			height: 600px;
+			background: black;
+			float: left;
+		}
+
+		#div_tong > .giua{
+			width: 5%;
+			height: 600px;
+			float: left;
+		}
+
+		#div_tong > .phai{
+			width: 75%;
+			height: 600px;
+			float: left;
+			background-image: url("./images/buoi6-css2/sua1.gif");
+		}
+		#div_tong > .phai > .duoi{
+			width: 65%;
+			height: 400px;
+		}
+		#div_tong > .phai > .phai{
+			width: 20%;
+			height: 400px;
+		}
+	</style>
+</head>
+<body>
+	<div id="div_tong" style="font-family: Arial;">
+		<div class="trai" style="position: relative;">
+			<img src="./images/buoi6-css2/sanho.gif" style="width: 120% ; height: 90%; position: absolute; bottom: 30px;">
+		</div>
+		<div class="giua">
+			<img src="./images/buoi6-css2/soc.jpg" width="100%" height="100%">
+		</div>
+		<div class="phai" style="background-repeat: no-repeat; background-position: center; position: relative; background-size: cover;">
+			<h1 style="color: orange; left: 3%; font-family: Arial; position:absolute; font-size: 50px;">
+				THAM GIA CLB
+			</h1>
+			<div class="duoi" style="position:absolute; top: 20%; left:6%">
+				Quý độc giả hãy điền đầy đủ thông tin để tham gia phát triển Câu lạc bộ ngày càng vững mạnh hơn<br><br>
+				<form style="background: lightgreen;">
+					<table width="100%">
+						<tr>
+							<td width="25%" align="right">
+								Họ và tên :
+							</td>
+							<td width="75%">
+								<input type="name" name="ho_va_ten" style="width: 70%;">*
+							</td>
+						</tr>	
+						<tr>
+							<td width="25%" align="right">
+								Địa chỉ :
+							</td>
+							<td width="75%">
+								<input type="text" name="dia_chi" style="width: 97%;">
+							</td>
+						</tr>	
+						<tr>
+							<td width="25%" align="right">
+								Email :
+							</td>
+							<td width="75%">
+								<input type="email" name="email" style="width: 70%;">*
+							</td>
+						</tr>	
+						<tr>
+							<td width="25%" align="right">
+								Điện thoại :
+							</td>
+							<td width="75%">
+								<input type="tel" name="dien_thoai" style="width: 50%;">*
+							</td>
+						</tr>	
+						<tr>
+							<td width="25%" align="right">
+								Ngày sinh :
+							</td>
+							<td width="75%">
+								<input type="" name="ngay_sinh" style="width: 70%;">*
+							</td>
+						</tr>	
+						<tr>
+							<td width="25%" align="right">
+								Đề tài :
+							</td>
+							<td width="75%">
+								<select style="width: 50%;">
+									<option>Tìm hiểu Sứa biển</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td width="25%" align="right">
+								Nhóm :<br><br><br><br><br><br>
+							</td>
+							<td width="75%">
+								<input type="radio" name="nhom">Nghiên cứu<br>
+								<input type="radio" name="nhom">Hải ngư<br>
+								<input type="radio" name="nhom">Viễn dương<br>
+								<input type="radio" name="nhom">Mỹ thuật<br>
+								<input type="radio" name="nhom">Thực phẩm<br>
+								<input type="radio" name="nhom">Sinh viên<br>
+							</td>
+						</tr>	
+						<tr>
+							<td width="25%" align="right">
+								Gửi hình :
+							</td>
+							<td width="75%">
+								<input type="file" multiple>
+							</td>
+						</tr>
+						<tr>
+							<td width="25%" align="right">
+								Tài liệu :<br><br><br><br><br>
+							</td>
+							<td width="75%">
+								<input type="checkbox">Sinh vật Biển<br>
+								<input type="checkbox">Các loài Sứa biển<br>
+								<input type="checkbox">San hô<br>
+								<input type="checkbox">Môi trường Biển<br>
+								<input type="checkbox">Khí hậu<br>
+							</td>
+						</tr>	
+						<tr>
+							<td></td>
+							<td>
+								<input type="submit" value="Tham gia">
+								<input type="reset" value="Xóa thông tin">
+							</td>
+						</tr>	
+					</table>
+				</form>
+			</div>
+			<div class="phai" style="position: absolute; right: 4%;">
+				<img src="./images/buoi6-css2/nhom1b.jpg">
+				<img src="./images/buoi6-css2/nhom1a.jpg">
+				<img src="./images/buoi6-css2/nhom1c.jpg">
+				<img src="./images/buoi6-css2/nhom1d.jpg">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
