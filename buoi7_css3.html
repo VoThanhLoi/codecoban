@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#div_tong{
+			width: 1580px;
+			margin: auto;
+			padding: 5px;
+			border: 0px solid black;
+			height: 2000px;
+		}
+		#div_tong > .trai{
+			width: 165px;
+			height: 2000px;
+			float: left;
+			background: blue;
+		}
+		#div_tong > .giua{
+			width: 1250px;
+			height: 2000px;
+			float: left;
+		}
+		#div_tong > .phai{
+			width: 165px;
+			height: 2000px;
+			float: left;
+			background: blue;
+		}
+
+		/*#div_tong > .giua > .tren*/
+		#div_tong > .giua > .tren{
+			width: 1250px;
+			height: 80px;
+		}
+		#div_tong > .giua > .tren > .trai{
+			width: 250px;
+			height: 80px;
+			text-align: center;
+			float: left;
+		}
+		#div_tong > .giua > .tren > .giua{
+			width: 650px;
+			height: 80px;
+			text-align: center;
+			float: left;
+		}
+		#div_tong > .giua > .tren > .giua_1{
+			width: 200px;
+			height: 80px;
+			float: left;
+		}
+		#div_tong > .giua > .tren > .giua_1 > a > table{
+			display: none;
+		}
+		#div_tong > .giua > .tren > .giua_1 > a:hover table{
+			display: block;
+			position: absolute;
+			right: -30px;
+			top: 35px;
+		}
+		#div_tong > .giua > .tren > .phai{
+			width: 150px;
+			height: 80px;
+			float: left;
+		}
+		#div_tong > .giua > .tren > .phai > a{
+			text-decoration: none;
+			color: grey;
+		}
+
+		/*#div_tong > .giua > .tren_1*/
+		#div_tong > .giua > .tren_1{
+			width: 1250px;
+			height: 30px;
+		}
+
+		/*#div_tong > .giua > .tren_2*/
+		#div_tong > .giua > .tren_2{
+			width: 1250px;
+			height: 700px;
+			background-image: url("./images/buoi7-css3/aaaaa.png");
+		}
+		#div_tong > .giua > .tren_2 > .trai{
+			width: 250px;
+			height: 415px;
+			background: white;
+			float: left;
+			border-radius: 5px;
+			font-family: arial;
+			font-size: 15px;
+		}
+		#div_tong > .giua > .tren_2 > .trai > table > tr,td:hover table{
+			display: block;
+			left: 433px;
+			top: 123px;
+		}
+		#div_tong > .giua > .tren_2 > .giua{
+			width: 700px;
+			height: 700px;
+			float: left;
+		}
+		#div_tong > .giua > .tren_2 > .phai{
+			width: 300px;
+			height: 700px;
+			float: left;
+		}
+
+
+
+		.nen_dang_nhap{
+			background-image: url("./images/buoi7-css3/nen_dang_nhap.png");
+			border-radius: 5px;
+		}
+
+		.nen_tren_1_danh_muc{
+			background-image: url("./images/buoi7-css3/nen_tren_1_danh_muc.png");
+			border-radius: 5px;
+		}
+
+		.nen_tren_1_menu{
+			background-image: url("./images/buoi7-css3/nen_tren_1_menu.png");
+			border-radius: 5px;
+		}
+
+		.chu_menu_nen_tren_1 a{
+			color: white;
+			text-decoration: none;
+		}
+
+		.chu_menu_nen_tren_1_doi_mau a:hover{
+			color: blue;
+		}
+
+		.tren_1_phai_chutora td:hover{
+			font-weight: bold;
+		}
+
+		.tren_2_trai_chutora td:hover{
+			font-weight: bold;
+		}
+
+		.tren_2_trai_linhkienmoi_chitiet_an table{
+			display: none;
+		}
+
+		.tren_2_trai_chitiet_chutrang a{
+			color: black;
+			text-decoration: none;
+			font-weight: normal;
+			font-size: 13px;
+		}
+
+		.tren_2_trai_chitiet_nenthaydoi a:hover{
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div id="div_tong">
+		<div class="trai">
+			<img src="./images/buoi7-css3/blackfriday_offline.png" style="position: fixed; top:200px;">
+		</div>
+		<div class="giua">
+			<div class="tren">
+				<div class="trai">
+					<a href="https://tinhocngoisao.com/" target="blank">
+						<img src="./images/buoi7-css3/logo.png" width="40%">
+					</a>
+				</div>
+				<div class="giua" style="position: relative;">
+					<form style="width: 100%; height: 80px; position: absolute; top: 17px;">
+						<input type="text" placeholder="Bạn tìm gì..." style="background: lightgrey; width: 70%; height: 40%; border-radius: 5px; font-size: 12px;">
+						<input type="submit" style="background: red; width: 20%; height: 40%; border-radius: 5px; font-size: 12px; color: white;" value="Tìm kiếm">
+						</input>
+					</form>
+				</div>
+				<div class="giua_1" style="position:relative;">
+					<a href="#" style="font-family: arial; text-decoration: none; color: grey; position: absolute; top: 20px; left: 30px;">
+						Đăng nhập/Đăng ký<br>
+						<b>
+							Tài khoản
+						</b>
+						<table style="background: lightgrey; border-radius: 5px; width: 200px; height: 123px;" cellspacing="5" cellpadding="18">
+							<tr>
+								<td align="center" class="nen_dang_nhap" width="180px">
+									<a href="https://tinhocngoisao.com/account/login" style="text-decoration: none; color: black; font-size: 14px;" target="blank">
+										Đăng nhập
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="nen_dang_nhap" align="center" width="180px">
+									<a href="https://tinhocngoisao.com/account/login" style="text-decoration: none; color: black; font-size: 14px;" target="blank">
+										Tạo tài khoản
+									</a>
+								</td>
+							</tr>
+						</table>
+					</a>
+				</div>
+				<div class="phai" style="position:relative;">
+					<a href="https://tinhocngoisao.com/cart" target="blank" style="top:20px; position:absolute; left:26px;">
+						<img src="./images/buoi7-css3/gio_hang.png" style="vertical-align: middle;" width="30%">
+						Giỏ hàng
+					</a>
+				</div>
+			</div>
+			<div class="tren_1">
+				<table>
+					<tr height="100%">
+						<td class="nen_tren_1_danh_muc" width="250px" style="color: white; font-family: arial; text-align:center;">
+							DANH MỤC SẢN PHẨM
+						</td>
+						<td class="nen_tren_1_menu" width="1000px" style="color: white; font-family: arial;">
+							<table style="font-size: 14px;" class="chu_menu_nen_tren_1">
+								<tr class="tren_1_phai_chutora chu_menu_nen_tren_1_doi_mau">
+									<td width="200px">
+										<a href="https://icafe.tinhocngoisao.com/" target="blank">
+											<img src="./images/buoi7-css3/lap_dat_phong_net.png" width="8%" style="vertical-align:middle;">
+											Lắp đặt phòng net
+										</a>
+									</td>
+									<td width="200px" style="text-align:center;">
+										<a href="https://tinhocngoisao.com/pages/tra-gop" target="blank">
+											<img src="./images/buoi7-css3/tra_gop.png" width="8%" style="vertical-align:middle;">
+											Trả góp
+										</a>
+									</td>
+									<td width="200px" style="text-align:center;">
+										<a href="https://tinhocngoisao.com" target="blank">
+											<img src="./images/buoi7-css3/bang_gia.png" width="8%" style="vertical-align:middle;">
+											Bảng giá
+										</a>
+									</td>
+									<td width="200px" style="text-align:center;">
+										<a href="https://tinhocngoisao.com/pages/xay-dung-cau-hinh" target="blank">
+											<img src="./images/buoi7-css3/xay_dung_cau_hinh.png" width="8%" style="vertical-align:middle;">
+											Xây dựng cấu hình
+										</a>
+									</td>
+									<td width="200px" style="text-align:center;">
+										<a href="https://tinhocngoisao.com/pages/dang-ky-bao-hanh" target="blank">
+											<img src="./images/buoi7-css3/kiem_tra_bao_hanh.png" width="8%" style="vertical-align:middle;">
+											Kiểm tra bảo hành
+										</a>
+									</td>
+									<td width="200px" style="text-align: right;">
+										<a href="https://tinhocngoisao.com/pages/dang-ky-bao-hanh" target="blank">
+											<img src="./images/buoi7-css3/thiet_bi_mining.png" width="8%" style="vertical-align:middle;">
+											Thiết bị mining
+										</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="tren_2">
+				<div class="trai">
+					<table>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="30px">
+								<img src="./images/buoi7-css3/linh_kien_moi.png" style="vertical-align: middle;">
+							</td>
+							<td width="200px" class="tren_2_trai_linhkienmoi_chitiet_an">
+								Linh Kiện Mới
+								<table style="width: 990px; height: 415px; position: absolute; border-radius: 5px;" bgcolor="white">
+									<tr class="tren_2_trai_chitiet_chutrang">
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												CPU - Bộ vi xử lý
+											</h4>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Mainboard - Bo mạch chủ
+											</h4>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												SSD - HDD
+											</h4>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Case - Thùng máy
+											</h4>
+										</td>
+									</tr>
+									<tr class="tren_2_trai_chitiet_chutrang tren_2_trai_chitiet_nenthaydoi">
+										<td>
+											<a href="#">
+												Intel thế hệ 13 (mới)
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Mainboard Intel
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												SSD 120G - 128G
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Case dưới 500K
+											</a>
+										</td>
+									</tr>
+									<tr class="tren_2_trai_chitiet_chutrang tren_2_trai_chitiet_nenthaydoi">
+										<td>
+											<a href="#">
+												Intel thế hệ 12
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Mainboard AMD
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												SSD 240G - 256G
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Case 500K - 1 Triệu
+											</a>
+										</td>
+									</tr>
+									<tr class="tren_2_trai_chitiet_chutrang tren_2_trai_chitiet_nenthaydoi">
+										<td>
+											<a href="#">
+												Intel thế hệ 11
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Mainboard theo hãng
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												SSD 480G - 512G
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Case 1 triệu - 2 triệu
+											</a>
+										</td>
+									</tr>
+									<tr class="tren_2_trai_chitiet_chutrang tren_2_trai_chitiet_nenthaydoi">
+										<td>
+											<a href="#">
+												Intel thế hệ 10
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Mainboard theo socket
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												SSD 1TB - 2TB - 4TB
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Case trên 2 triệu
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td width="20px" class="tren_2_trai_linhkienmoi_chitiet_an">
+								>
+								<table style="width: 990px; height: 415px; position: absolute; border-radius: 5px;" bgcolor="white">
+									<tr class="tren_2_trai_chitiet_chutrang">
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												CPU - Bộ vi xử lý
+											</h4>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Mainboard - Bo mạch chủ
+											</h4>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												SSD - HDD
+											</h4>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Case - Thùng máy
+											</h4>
+										</td>
+									</tr>
+									<tr class="tren_2_trai_chitiet_chutrang tren_2_trai_chitiet_nenthaydoi">
+										<td>
+											<a href="#">
+												Intel thế hệ 13 (mới)
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Mainboard Intel
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												SSD 120G - 128G
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Case dưới 500K
+											</a>
+										</td>
+									</tr>
+									<tr class="tren_2_trai_chitiet_chutrang tren_2_trai_chitiet_nenthaydoi">
+										<td>
+											<a href="#">
+												Intel thế hệ 12
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Mainboard AMD
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												SSD 240G - 256G
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Case 500K - 1 Triệu
+											</a>
+										</td>
+									</tr>
+									<tr class="tren_2_trai_chitiet_chutrang tren_2_trai_chitiet_nenthaydoi">
+										<td>
+											<a href="#">
+												Intel thế hệ 11
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Mainboard theo hãng
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												SSD 480G - 512G
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Case 1 triệu - 2 triệu
+											</a>
+										</td>
+									</tr>
+									<tr class="tren_2_trai_chitiet_chutrang tren_2_trai_chitiet_nenthaydoi">
+										<td>
+											<a href="#">
+												Intel thế hệ 10
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Mainboard theo socket
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												SSD 1TB - 2TB - 4TB
+											</a>
+										</td>
+										<td>
+											<a href="#">
+												Case trên 2 triệu
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="30px">
+								<img src="./images/buoi7-css3/laptop_chinh_hang.png" style="vertical-align: middle;">
+							</td>
+							<td width="200px">
+								Laptop Chính Hãng
+							</td>
+							<td width="20px">
+								>
+							</td>
+						</tr>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="30px">
+								<img src="./images/buoi7-css3/pc_gaming_do_hoa_audio.png" style="vertical-align: middle;">
+							</td>
+							<td width="200px">
+								PC Gaming, Đồ Họa, Audio
+							</td>
+							<td width="20px">
+								>
+							</td>
+						</tr>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="30px">
+								<img src="./images/buoi7-css3/man_hinh_may_tinh.png" style="vertical-align: middle;">
+							</td>
+							<td width="200px">
+								Màn Hình Máy Tính
+							</td>
+							<td width="20px">
+								>
+							</td>
+						</tr>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="30px">
+								<img src="./images/buoi7-css3/ban_ghe_gaming.png" style="vertical-align: middle;">
+							</td>
+							<td width="200px">
+								Bàn, Ghế Gaming
+							</td>
+							<td width="20px">
+								>
+							</td>
+						</tr>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="30px">
+								<img src="./images/buoi7-css3/phim_chuot_tai_nghe.png" style="vertical-align: middle;">
+							</td>
+							<td width="200px">
+								Phím, Chuột, Tai Nghe
+							</td>
+							<td width="20px">
+								>
+							</td>
+						</tr>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="30px">
+								<img src="./images/buoi7-css3/thiet_bi_am_thanh.png" style="vertical-align: middle;">
+							</td>
+							<td width="200px">
+								Thiết Bị Âm Thanh
+							</td>
+							<td width="20px">
+								>
+							</td>
+						</tr>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="30px">
+								<img src="./images/buoi7-css3/phu_kien_chung.png" style="vertical-align: middle;">
+							</td>
+							<td width="200px">
+								Phụ Kiện Chung
+							</td>
+							<td width="20px">
+								>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="giua"></div>
+				<div class="phai"></div>
+			</div>
+		</div>
+		<div class="phai">
+			<img src="./images/buoi7-css3/blackfriday_online.png" style="position: fixed; top:200px;">
+		</div>
+	</div>
+</body>
+</html>
