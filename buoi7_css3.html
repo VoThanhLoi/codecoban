@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#div_tong{
+			width: 1250px;
+			height: 1780px;
+			margin: auto;
+		}
+
+		/*#div_tong > .tren*/
+		#div_tong > .tren{
+			width: 1250px;
+			height: 80px;
+		}
+		#div_tong > .tren > .trai{
+			width: 250px;
+			height: 80px;
+			text-align: center;
+			float: left;
+		}
+		#div_tong > .tren > .giua{
+			width: 650px;
+			height: 80px;
+			text-align: center;
+			float: left;
+		}
+		#div_tong > .tren > .giua_1{
+			width: 200px;
+			height: 80px;
+			float: left;
+		}
+		#div_tong > .tren > .giua_1 > a > table{
+			display: none;
+		}
+		#div_tong > .tren > .giua_1 > a:hover table{
+			display: block;
+			right: -30px;
+			top: 35px;
+		}
+		#div_tong > .tren > .phai{
+			width: 150px;
+			height: 80px;
+			float: left;
+		}
+		#div_tong > .tren > .phai > a{
+			text-decoration: none;
+			color: grey;
+		}
+		#div_tong > .tren > .phai > a:hover{
+			font-weight: bold;
+			color: blue;
+		}
+
+		/*#div_tong > .tren_1*/
+		#div_tong > .tren_1{
+			width: 1250px;
+			height: 30px;
+		}
+		#div_tong > .tren_1 > table > tr,td > a{
+			color: white;
+			text-decoration: none;
+		}
+		#div_tong > .tren_1 > table > tr,td > a:hover{
+			color: blue;
+			font-weight: bold;
+		}
+
+		/*#div_tong > .duoi*/
+		#div_tong > duoi{
+			width: 1250px;
+			height: 1390px;
+			background-image: url("./images/buoi7-css3/aaaaa.png");
+		}
+		#div_tong > .duoi > .tren_2{
+			width: 1250px;
+			height: 415px;
+			background-image: url("./images/buoi7-css3/aaaaa.png");
+		}
+		#div_tong > .duoi > .tren_2 > .trai{
+			width: 250px;
+			height: 415px;
+			background: white;
+			float: left;
+			border-radius: 5px;
+			font-family: arial;
+			font-size: 15px;
+			position: relative;
+		}
+		#div_tong > .duoi > .tren_2 > .trai > table > tr,td:hover table{
+			display: block;
+			top: -2px;
+			left: 220px;
+		}
+		#div_tong > .duoi > .tren_2 > .giua{
+			width: 660px;
+			height: 415px;
+			float: left;
+		}
+		#div_tong > .duoi > .tren_2 > .phai{
+			width: 340px;
+			height: 415px;
+			float: left;
+		}
+
+		/*#div_tong > .duoi > .duoi*/
+		#div_tong > .duoi > .duoi{
+			width: 1250px;
+			height: 1225px;
+			background-image: url("./images/buoi7-css3/aaaaa.png");
+		}
+		#div_tong >.duoi >  .duoi > .topbanchay{
+			width: 1250px;
+			height: 600px;
+			position: absolute;
+			top: 550px;
+		}
+		#div_tong >.duoi >  .duoi > .topbanchay > .tren{
+			width: 1250px;
+			height: 300px;
+			position: relative;
+		}
+		#div_tong >.duoi >  .duoi > .topbanchay > .duoi{
+			width: 1250px;
+			height: 300px;
+		}
+		#div_tong >.duoi >  .duoi > .chi_nhanh{
+			width: 1250px;
+			height: 200px;
+			background: white;
+			position: absolute;
+			top: 1175px;
+			border-radius: 5px;
+		}
+		#div_tong >.duoi >  .duoi > .gioi_thieu{
+			width: 1250px;
+			height: 350px;
+			position: absolute;
+			top: 1400px;
+		}
+
+
+		.nen_dang_nhap{
+			background-image: url("./images/buoi7-css3/nen_dang_nhap.png");
+			border-radius: 5px;
+		}
+
+		.nen_tren_1_danh_muc{
+			background-image: url("./images/buoi7-css3/nen_tren_1_danh_muc.png");
+			border-radius: 5px;
+		}
+
+		.nen_tren_1_menu{
+			background-image: url("./images/buoi7-css3/nen_tren_1_menu.png");
+			border-radius: 5px;
+		}
+
+		.tren_2_trai_chutora td:hover{
+			font-weight: bold;
+		}
+
+		.chitiet_an table{
+			display: none;
+		}
+
+		.tren_2_trai_chitiet_chutrang a{
+			color: black;
+			text-decoration: none;
+			font-weight: normal;
+			font-size: 13px;
+		}
+
+		.tren_2_trai_chitiet_nenthaydoi a:hover{
+			background: yellow;
+		}
+
+		.goi_thieu_the_a a:hover{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="div_tong">
+		<a href="#">
+			<img src="./images/buoi7-css3/ic-fb.png" style="position: fixed; width:40px; top:850px; right: 80px; z-index:99">
+			<img src="./images/buoi7-css3/icon-tiktok.png" style="position: fixed; width:40px; top:800px; right: 80px; z-index:99">
+			<img src="./images/buoi7-css3/icon-shopee.png" style="position: fixed; width:40px; top:750px; right: 80px; z-index:99">
+		</a>
+		<div class="tren">
+			<div class="trai">
+				<a href="https://tinhocngoisao.com/" target="blank">
+					<img src="./images/buoi7-css3/logo.png" width="40%">
+				</a>
+			</div>
+			<div class="giua" style="position: relative;">
+				<form style="width: 100%; height: 80px; position: absolute; top: 17px;">
+					<input type="text" placeholder="Bạn tìm gì..." style="background: lightgrey; width: 70%; height: 40%; border-radius: 5px; font-size: 12px;">
+					<input type="submit" style="background: red; width: 20%; height: 40%; border-radius: 5px; font-size: 12px; color: white;" value="Tìm kiếm">
+					</input>
+				</form>
+			</div>
+			<div class="giua_1" style="position:relative;">
+				<a href="#" style="font-family: arial; text-decoration: none; color: grey; position: absolute; top: 20px; left: 30px;">
+					Đăng nhập/Đăng ký<br>
+					<b>
+						Tài khoản
+					</b>
+					<table style="background: lightgrey; border-radius: 5px; width: 200px; height: 123px; position: absolute; z-index: 99;" cellspacing="5" cellpadding="18">
+						<tr>
+							<td align="center" class="nen_dang_nhap" width="180px">
+								<a href="https://tinhocngoisao.com/account/login" style="text-decoration: none; color: black; font-size: 14px;" target="blank">
+									Đăng nhập
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="nen_dang_nhap" align="center" width="180px">
+								<a href="https://tinhocngoisao.com/account/login" style="text-decoration: none; color: black; font-size: 14px;" target="blank">
+									Tạo tài khoản
+								</a>
+							</td>
+						</tr>
+					</table>
+				</a>
+			</div>
+			<div class="phai" style="position:relative;">
+				<a href="https://tinhocngoisao.com/cart" target="blank" style="top:20px; position:absolute; left:26px;">
+					<img src="./images/buoi7-css3/gio_hang.png" style="vertical-align: middle;" width="30%">
+					Giỏ hàng
+				</a>
+			</div>
+		</div>
+		<div class="tren_1">
+			<table>
+				<tr height="100%">
+					<td class="nen_tren_1_danh_muc" width="250px" style="color: white; font-family: arial; text-align:center;">
+						DANH MỤC SẢN PHẨM
+					</td>
+					<td class="nen_tren_1_menu" width="1000px" style="color: white; font-family: arial;">
+						<table style="font-size: 14px;">
+							<tr>
+								<td width="200px">
+									<a href="https://icafe.tinhocngoisao.com/" target="blank">
+										<img src="./images/buoi7-css3/lap_dat_phong_net.png" width="8%" style="vertical-align:middle;">
+										Lắp đặt phòng net
+									</a>
+								</td>
+								<td width="200px" style="text-align:center; position:relative;">
+									<a href="https://tinhocngoisao.com/pages/tra-gop" target="blank">
+										<img src="./images/buoi7-css3/tra_gop.png" width="8%" style="vertical-align:middle;">
+										Trả góp
+									</a>
+								</td>
+								<td width="200px" style="text-align:center; position:relative;">
+									<a href="https://tinhocngoisao.com" target="blank">
+										<img src="./images/buoi7-css3/bang_gia.png" width="8%" style="vertical-align:middle;">
+										Bảng giá
+									</a>
+								</td>
+								<td width="200px" style="text-align:center; position:relative;">
+									<a href="https://tinhocngoisao.com/pages/xay-dung-cau-hinh" target="blank">
+										<img src="./images/buoi7-css3/xay_dung_cau_hinh.png" width="8%" style="vertical-align:middle;">
+										Xây dựng cấu hình
+									</a>
+								</td>
+								<td width="200px" style="text-align:center; position:relative;">
+									<a href="https://tinhocngoisao.com/pages/dang-ky-bao-hanh" target="blank">
+										<img src="./images/buoi7-css3/kiem_tra_bao_hanh.png" width="8%" style="vertical-align:middle;">
+										Kiểm tra bảo hành
+									</a>
+								</td>
+								<td width="200px" style="text-align: right; position:relative;">
+									<a href="https://tinhocngoisao.com/pages/dang-ky-bao-hanh" target="blank">
+										<img src="./images/buoi7-css3/thiet_bi_mining.png" width="8%" style="vertical-align:middle;">
+										Thiết bị mining
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="duoi">
+			<div class="tren_2">
+				<div class="trai">
+					<table>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="250px" class="chitiet_an" style="position:relative;">
+								<img src="./images/buoi7-css3/linh_kien_moi.png" style="vertical-align: middle;">
+								Linh Kiện Mới
+								<table style="width: 997px; height: 415px;border-radius: 5px; position: absolute; left:252px;" bgcolor="white">
+									<tr class="tren_2_trai_chitiet_chutrang">
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												CPU - Bộ vi xử lý
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Intel thế hệ 13 (mới)
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Intel thế hệ 12
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Intel thế hệ 11
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Intel thế hệ 10
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														AMD 7000 Series
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Mainboard - Bo mạch chủ
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Mainboard Intel
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Mainboard AMD
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Mainboard theo hãng
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Mainboard theo socket
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Mainboard theo kích thước
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												SSD - HDD
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														SSD 120G - 128G
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														SSD 240G - 256G
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														SSD 480G - 512G
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														SSD 1TB - 2TB - 4TB
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														M.2 SATA
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Case - Thùng máy
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Case dưới 500K
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Case 500K - 1 Triệu
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Case 1 triệu - 2 triệu
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Case trên 2 triệu
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Case theo hãng
+													</a>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="250px" class="chitiet_an" style="position:relative;">
+								<img src="./images/buoi7-css3/laptop_chinh_hang.png" style="vertical-align: middle;">
+								Laptop Chính Hãng
+								<table style="width: 997px; height: 415px;border-radius: 5px; position: absolute; top: -54px; left:252px;" bgcolor="white">
+									<tr class="tren_2_trai_chitiet_chutrang">
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Laptop theo hãng
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Laptop Asus
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Laptop Acer
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Laptop Avita
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Laptop Dell
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Laptop HP
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Laptop theo RAM
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Laptop Ram 4GB
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Laptop Ram 8GB
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Laptop Ram 16GB
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Laptop Ram 32GB
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Laptop Ram trên 32GB
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Laptop theo VGA
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Laptop VGA Onboard
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Laptop VGA NVIDIA
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														NVIDIA GTX 1650/1650Ti
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														NVIDIA GTX 1660
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														NVIDIA RTX 3050/3050Ti
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Laptop Theo Ổ cứng
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Chỉ có HDD
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Chỉ có SSD
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														SSD và HDD
+													</a>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="250px" class="chitiet_an"  style="position:relative;">
+								<img src="./images/buoi7-css3/pc_gaming_do_hoa_audio.png" style="vertical-align: middle;">
+								PC Gaming, Đồ Họa, Audio
+								<table style="width: 997px; height: 415px;border-radius: 5px; position: absolute; top: -106px; left:252px;" bgcolor="white">
+									<tr class="tren_2_trai_chitiet_chutrang">
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Cấu hình Grandma Shark
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Grandma 3090Ti i9
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Grandma 3090 i9
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Grandma 3080Ti i9
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Grandma 3070Ti i9
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Grandma 3070Ti R9
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Cấu hình Mommy Shark
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Mommy 3080 i7
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Mommy 3070Ti i7
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Mommy 3060Ti i7
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Mommy 3060Ti R7
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Mommy 3060 i7
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Cấu hình Daddy Shark
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Daddy 3060Ti i5
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Daddy 3060 i5
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Daddy 3060 i5 (2nd)
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Daddy 3050 i5
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Daddy 2060 i5
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Cấu hình Baby Shark
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Baby 3050 i3
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Baby 2060S i3 (2nd)
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Baby 1660S i3
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Baby 1660S i3 (2nd)
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Baby 1650 i3
+													</a>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="220px" class="chitiet_an" style="position:relative;">
+								<img src="./images/buoi7-css3/man_hinh_may_tinh.png" style="vertical-align: middle;">
+								Màn Hình Máy Tính
+								<table style="width: 997px; height: 415px;border-radius: 5px; position: absolute; top: -158px; left:252px;" bgcolor="white">
+									<tr class="tren_2_trai_chitiet_chutrang">
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Màn hình theo hãng
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Màn hình Acer
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn hình AOC
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn hình Asus
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn hình Dahua
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn hình Gigabyte
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Nhu cầu sử dụng
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Màn hình Gaming
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn hình Đồ họa
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn hình Phổ thông & Văn phòng
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn hình phẳng
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn hình cong
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Kích thước
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Màn hình 19"
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn hình 20"
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn hình 22"
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn hình 24"
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn hình 27"
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Tấm nền
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Màn Hình IPS
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn Hình PLS
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn Hình VA
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Màn Hình TN
+													</a>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="220px" class="chitiet_an" style="position:relative;">
+								<img src="./images/buoi7-css3/ban_ghe_gaming.png" style="vertical-align: middle;">
+								Bàn, Ghế Gaming
+								<table style="width: 997px; height: 415px;border-radius: 5px; position: absolute; top:-210px; left:252px;" bgcolor="white">
+									<tr class="tren_2_trai_chitiet_chutrang">
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Bàn Game
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Bàn Gaming
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Bàn PC chữ Z
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Ghế Game
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Ghế Gaming
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Phụ kiện khác
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Đế bắt Main
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Nút nguồn
+													</a>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="220px" class="chitiet_an" style="position:relative;">
+								<img src="./images/buoi7-css3/phim_chuot_tai_nghe.png" style="vertical-align: middle;">
+								Phím, Chuột, Tai Nghe
+								<table style="width: 997px; height: 415px;border-radius: 5px; position: absolute; top: -262px; left:252px;" bgcolor="white">
+									<tr class="tren_2_trai_chitiet_chutrang">
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Bàn phím
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Bàn phím cơ
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Bàn phím giả cơ
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Bàn phím văn phòng
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Tai nghe
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Tai nghe Gaming
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Tai nghe không dây
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Tai nghe phổ thông
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Ốp tai nghe
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Chuột
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Chuột Gaming
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Chuột văn phòng
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Chuột không dây
+													</a>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="220px" class="chitiet_an" style="position:relative;">
+								<img src="./images/buoi7-css3/camera_thiet_bi_quan_sat.png" style="vertical-align: middle; width: 8%;">
+								Camera, Thiết Bị Quan Sát
+								<table style="width: 997px; height: 415px;border-radius: 5px; position: absolute;top: -314px; left:252px;" bgcolor="white">
+									<tr class="tren_2_trai_chitiet_chutrang">
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Camera theo hãng
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Camera Dahua
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Camera Hikvision
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Camera HiLook
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Camera IMOU
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Camera EZVIZ
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Đầu thu camera
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Đầu thu camera Dahua
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Đầu thu camera KBVision
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Đầu Thu HikVision
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Đầu Thu HiLook
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Đầu thu Vantech
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Phụ kiện camera
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Modem/Router
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Totolink
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Tenda
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														TP-Link
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Thiết bị cân bằng tải
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Webcam
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Webcam Asus
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Webcam Dahua
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Webcam Logitech
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Webcam Hikvision
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Webcam Kisonli
+													</a>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr style="height: 50px;" class="tren_2_trai_chutora">
+							<td width="220px" class="chitiet_an" style="position:relative;">
+								<img src="./images/buoi7-css3/phu_kien_chung.png" style="vertical-align: middle;">
+								Phụ Kiện Chung
+								<table style="width: 997px; height: 415px;border-radius: 5px; position: absolute;top: -366px; left:252px;" bgcolor="white">
+									<tr class="tren_2_trai_chitiet_chutrang">
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Thu phát sóng wifi
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Tenda
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														TP-Link
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Phát Wifi Asus
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														USB thu wifi
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Bộ phát wifi di động
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Switch
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Switch TP-Link
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Switch 5 ports
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Switch 8 ports
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Switch 16 ports
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Switch 24 ports
+													</a>
+												</li>
+											</ul>
+										</td>
+										<td style="width: 250px;" class="tren_2_trai_chitiet_nenthaydoi">
+											<h4>
+												Cáp kết nối
+											</h4>
+											<ul class="tren_2_trai_doimauthea_chitiet tren_2_trai_doimaunen_chitiet" style="font-weight: normal; list-style-type: none; padding: 0; position: absolute;">
+												<li>
+													<a href="#">
+														Cáp đầu chuyển HDMI
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Cáp đầu chuyển VGA
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Cáp đầu chuyển DVI
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Cáp đầu chuyển Displayport
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Cáp mạng - Đầu mạng
+													</a>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="giua">
+					<a href="#">
+						<img src="./images/buoi7-css3/banner_1.png" style="border-radius: 5px; height: 415px; left: 265px; margin-left: 4px;">
+					</a>
+				</div>
+				<div class="phai">
+					<a href="#">
+						<img src="./images/buoi7-css3/banner_right_2.jpg" style="width: 330px;border-radius: 5px; margin-left: 4px;">
+						<img src="./images/buoi7-css3/banner_right_1.jpg" style="width: 329px;border-radius: 5px; margin-left: 4px;">
+					</a>
+				</div>
+			</div>
+			<div class="duoi">
+				<div class="topbanchay">
+					<div class="tren">
+						<table>
+							<tr>
+								<td bgcolor="red" style="width: 250px; height: 50px; font-family: arial; color:white; font-weight: bold; font-size: 16px;text-align: center; border-radius: 5px;">
+									TOP BÁN CHẠY TRONG TUẦN
+								</td>
+								<td bgcolor="white" colspan="4" style="width: 1000px;height: 50px; border-radius: 5px;">
+								</td>
+							</tr>
+							<tr style="height: 250px;">
+								<td align="center" style="position:relative;" class="chitiet_an">
+									<img src="./images/buoi7-css3/top_ban_chay_1.png" width="230px" style="border-radius: 5px; border: 5px solid white;">
+									<table style="position:absolute; border-radius: 5px; width: 300px; top:200px; left: 180px; border:1px dotted grey; z-index:99; overflow: scroll; height:300px;" bgcolor="white">
+										<tr>
+											<th colspan="2">
+												SSD Kingston 500G NV2 M.2 2280 NVMe (SNV2S/500G)
+											</th>
+										</tr>
+										<tr>
+											<td colspan="2" style="font-weight:bold;">
+												Cấu hình chi tiết:
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Hãng
+											</td>
+											<td>
+												Kingston
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Model
+											</td>
+											<td>
+												SNV2S/500G
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Kích cỡ nhỏ
+											</td>
+											<td>
+												M.2 2280
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Giao diện
+											</td>
+											<td>
+												PCIe 4.0 x4 NVMe
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Các mức dung lượng2	
+											</td>
+											<td>
+												500GB
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Tốc độ đọc
+											</td>
+											<td>
+												3500MB/giây
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Tốc độ ghi
+											</td>
+											<td>
+												2100MB/giây
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Độ bền
+											</td>
+											<td>
+												160 TB
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Nhiệt độ bảo quản
+											</td>
+											<td>
+												-40°C~85°C
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Nhiệt độ hoạt động
+											</td>
+											<td>
+												0°C~70°C
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td align="center" style="position:relative;" class="chitiet_an">
+									<img src="./images/buoi7-css3/top_ban_chay_2.png" width="230px" style="border-radius: 5px; border: 5px solid white;">
+									<table style="position:absolute; border-radius: 5px; width: 300px; top:200px; left: 180px; border:1px dotted grey; z-index: 99; overflow: scroll; height:300px;" bgcolor="white">
+										<tr>
+											<th colspan="2">
+												Ram DDR4 Corsair Vengeance LPX 8G/3600 Black Heat Spreader (CMK8GX4M1D3600C18)
+											</th>
+										</tr>
+										<tr>
+											<td colspan="2" style="font-weight:bold;">
+												Cấu hình chi tiết:
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Hãng
+											</td>
+											<td>
+												Corsair
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Model
+											</td>
+											<td>
+												CMK8GX4M1D3600C18
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Chuẩn
+											</td>
+											<td>
+												DDR4
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Dung lượng
+											</td>
+											<td>
+												8G (1x8GB)
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Bus
+											</td>
+											<td>
+												3600Mhz
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Tản nhiệt
+											</td>
+											<td>
+												Có
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td align="center" style="position:relative;" class="chitiet_an">
+									<img src="./images/buoi7-css3/top_ban_chay_3.png" width="230px" style="border-radius: 5px; border: 5px solid white;">
+									<table style="position:absolute; border-radius: 5px; width: 300px; top:200px; left: 180px; border:1px dotted grey; z-index: 99; overflow: scroll; height:300px;" bgcolor="white">
+										<tr>
+											<th colspan="2">
+												Màn hình LCD 24” Gigabyte G24F-EK FHD IPS 165Hz 1ms Freesync Gaming
+											</th>
+										</tr>
+										<tr>
+											<td colspan="2" style="font-weight:bold;">
+												Cấu hình chi tiết:
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Hãng
+											</td>
+											<td>
+												Gigabyte
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Model
+											</td>
+											<td>
+												G24F-EK
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Kích thước
+											</td>
+											<td>
+												23.8 inch, 16:9
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Tấm nền
+											</td>
+											<td>
+												IPS
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Loại màn hình
+											</td>
+											<td>
+												Phẳng
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Độ phân giải
+											</td>
+											<td>
+												Full HD (1920×1080)
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Tốc độ làm mới
+											</td>
+											<td>
+												165Hz , OC 170Hz
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Công nghệ hỗ trợ
+											</td>
+											<td>
+												AMD Freesync
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Thời gian đáp ứng
+											</td>
+											<td>
+												1ms (MPRT) / 2ms (GTG)
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Nổi bật
+											</td>
+											<td>
+												90% DCI-P3/120% sRGB , VESA Wall Mounting(mm) 100*100mm
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td align="center" style="position:relative;" class="chitiet_an">
+									<img src="./images/buoi7-css3/top_ban_chay_4.png" width="230px" style="border-radius: 5px; border: 5px solid white;">
+									<table style="position:absolute; border-radius: 5px; width: 300px; top:200px; left: 180px; border:1px dotted grey; z-index: 99; overflow: scroll; height:300px;" bgcolor="white">
+										<tr>
+											<th colspan="2">
+												CPU Intel Core i3 12100F Box Chính Hãng
+											</th>
+										</tr>
+										<tr>
+											<td colspan="2" style="font-weight:bold;">
+												Cấu hình chi tiết:
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Hãng
+											</td>
+											<td>
+												Intel
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Loại CPU
+											</td>
+											<td>
+												Dành cho máy bàn
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Thế hệ
+											</td>
+											<td>
+												Core i3 Thế hệ thứ 12
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Tên gọi
+											</td>
+											<td>
+												Core i3-12100
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Socket
+											</td>
+											<td>
+												FCLGA 1700
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Tên thế hệ
+											</td>
+											<td>
+												Alder Lake
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Số nhân
+											</td>
+											<td>
+												4
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Số luồng
+											</td>
+											<td>
+												8
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Tốc độ cơ bản
+											</td>
+											<td>
+												Performance-core Max Turbo Frequency: 4.3 GHz<br>
+												Performance-core Base Frequency: 3.30 GHz
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Cache
+											</td>
+											<td>
+												12MB<br>
+												Total L2 Cache: 5MB
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td align="center" style="position:relative;" class="chitiet_an">
+									<img src="./images/buoi7-css3/top_ban_chay_5.png" width="230px" style="border-radius: 5px; border: 5px solid white;">
+									<table style="position:absolute; border-radius: 5px; width: 300px; top:200px; left: -200px; border:1px dotted grey; z-index: 99; overflow: scroll; height:300px;" bgcolor="white">
+										<tr>
+											<th colspan="2">
+												Mainboard Asus H610M-K Prime DDR4
+											</th>
+										</tr>
+										<tr>
+											<td colspan="2" style="font-weight:bold;">
+												Cấu hình chi tiết:
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Socket Intel® LGA 1700
+											</td>
+											<td>
+												Sẵn sàng cho bộ vi xử lý Intel® thế hệ thứ 12
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												Làm mát toàn diện
+											</td>
+											<td>
+												tản nhiệt PCH và Fan Xpert
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Kết nối cực nhanh
+											</td>
+											<td>
+												khe M.2 32Gbps, Realtek 1 Gb Ethernet và hỗ trợ USB 3.2 Gen 1
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												5X Protection III
+											</td>
+											<td>
+												Nhiều biện pháp bảo vệ phần cứng để bảo vệ toàn diện
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="duoi">
+						<table>
+							<tr>
+								<td bgcolor="red" style="width: 250px; height: 50px; font-family: arial; color:white; font-weight: bold; font-size: 16px;text-align: center; border-radius: 5px;">
+									PC GAMING
+								</td>
+								<td bgcolor="white" colspan="4" style="width: 1000px;height: 50px; border-radius: 5px;">
+								</td>
+							</tr>
+							<tr style="height: 250px;">
+								<td align="center" style="position:relative;" class="chitiet_an">
+									<img src="./images/buoi7-css3/may_1.png" width="230px" style="border-radius: 5px; border: 5px solid white;">
+									<table style="position:absolute; border-radius: 5px; width: 300px; top:200px; left: 180px; border:1px dotted grey; z-index:99; overflow: scroll; height:300px;" bgcolor="white">
+										<tr>
+											<th colspan="2">
+												Cấu hình Gaming Baby 1660S I3 2ND
+											</th>
+										</tr>
+										<tr>
+											<td colspan="2" style="font-weight:bold;">
+												Cấu hình chi tiết:
+											</td>
+										</tr>
+										<tr>
+											<td>
+												MAINBOARD
+											</td>
+											<td>
+												Mainboard Asus H610M-K Prime DDR4
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												CPU
+											</td>
+											<td>
+												CPU Intel Core i3 12100F Box Chính Hãng (3.30 Up to 4.30GHz)
+											</td>
+										</tr>
+										<tr>
+											<td>
+												RAM
+											</td>
+											<td>
+												Ram DDR4 Kingston 8G/3200 Fury Beast (1x 8GB) (KF432C16BB/8)
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												SSD
+											</td>
+											<td>
+												SSD 256G PNY CS1031 NVMe PCIe Gen3x4 M.2 2280
+											</td>
+										</tr>
+										<tr>
+											<td>
+												VGA
+											</td>
+											<td>
+												VGA GAINWARD GTX 1660 Super 6GB GDDR6 Ghost Cũ - Còn Bảo Hành Hãng Đến 4/2024
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												PSU
+											</td>
+											<td>
+												Jetek STAR Power ST500 500W
+											</td>
+										</tr>
+										<tr>
+											<td>
+												CASE
+											</td>
+											<td>
+												Thùng máy Case 1St Player V2-A (Tặng kèm 4 Fan) RGB (Đen)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td align="center" style="position:relative;" class="chitiet_an">
+									<img src="./images/buoi7-css3/may_2.png" width="230px" style="border-radius: 5px; border: 5px solid white;">
+									<table style="position:absolute; border-radius: 5px; width: 300px; top:200px; left: 180px; border:1px dotted grey; z-index:99; overflow: scroll; height:300px;" bgcolor="white">
+										<tr>
+											<th colspan="2">
+												Cấu hình Gaming COUGAR RTX 3080
+											</th>
+										</tr>
+										<tr>
+											<td colspan="2" style="font-weight:bold;">
+												Cấu hình chi tiết:
+											</td>
+										</tr>
+										<tr>
+											<td>
+												MAINBOARD
+											</td>
+											<td>
+												Asus ROG Strix Z590-F
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												CPU
+											</td>
+											<td>
+												Intel Core i7 11700K
+											</td>
+										</tr>
+										<tr>
+											<td>
+												RAM
+											</td>
+											<td>
+												DDR4 Adata 16G/3200
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												SSD
+											</td>
+											<td>
+												500G Kingston
+											</td>
+										</tr>
+										<tr>
+											<td>
+												VGA
+											</td>
+											<td>
+												Colorful RTX 3080
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												PSU
+											</td>
+											<td>
+												Cooler Master MWE 850 V2 80 Plus Non-Modular Gold
+											</td>
+										</tr>
+										<tr>
+											<td>
+												CASE
+											</td>
+											<td>
+												NZXT H510 Flow Black
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td align="center" style="position:relative;" class="chitiet_an">
+									<img src="./images/buoi7-css3/may_3.png" width="230px" style="border-radius: 5px; border: 5px solid white;">
+									<table style="position:absolute; border-radius: 5px; width: 300px; top:200px; left: 180px; border:1px dotted grey; z-index:99; overflow: scroll; height:300px;" bgcolor="white">
+										<tr>
+											<th colspan="2">
+												Cấu hình Gaming Daddy 2060 I5
+											</th>
+										</tr>
+										<tr>
+											<td colspan="2" style="font-weight:bold;">
+												Cấu hình chi tiết:
+											</td>
+										</tr>
+										<tr>
+											<td>
+												MAINBOARD
+											</td>
+											<td>
+												Mainboard Asus Prime B660M-K/CSM D4
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												CPU
+											</td>
+											<td>
+												CPU Intel Core i5 12400F Box Chính Hãng (2.50 Up to 4.40GHz)
+											</td>
+										</tr>
+										<tr>
+											<td>
+												RAM
+											</td>
+											<td>
+												Ram DDR4 Kingston 8G/3200 Fury Beast (1x 8GB) (KF432C16BB/8)
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												SSD
+											</td>
+											<td>
+												Ổ cứng SSD 256G Colorful SL500 Sata III 6Gb/s TLC
+											</td>
+										</tr>
+										<tr>
+											<td>
+												VGA
+											</td>
+											<td>
+												VGA EVGA RTX 2060 KO ULTRA GAMING 6GB GDDR6
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												PSU
+											</td>
+											<td>
+												Nguồn Cooler Master Elite PC700 700W V3 (MPW-7001-PSABN1)
+											</td>
+										</tr>
+										<tr>
+											<td>
+												CASE
+											</td>
+											<td>
+												Thùng máy Case 1st Player DK-D4 (Tặng 4 Fan RGB)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td align="center" style="position:relative;" class="chitiet_an">
+									<img src="./images/buoi7-css3/may_4.png" width="230px" style="border-radius: 5px; border: 5px solid white;">
+									<table style="position:absolute; border-radius: 5px; width: 300px; top:200px; left: 180px; border:1px dotted grey; z-index:99; overflow: scroll; height:300px;" bgcolor="white">
+										<tr>
+											<th colspan="2">
+												Cấu hình Gaming Baby 1650S I3
+											</th>
+										</tr>
+										<tr>
+											<td colspan="2" style="font-weight:bold;">
+												Cấu hình chi tiết:
+											</td>
+										</tr>
+										<tr>
+											<td>
+												MAINBOARD
+											</td>
+											<td>
+												Mainboard Asus H510M-K Prime
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												CPU
+											</td>
+											<td>
+												CPU Intel Core i3 10100F (3.60 Up to 4.30GHz, 6M, 4 Cores 8 Threads) Box Chính Hãng (Không GPU)
+											</td>
+										</tr>
+										<tr>
+											<td>
+												RAM
+											</td>
+											<td>
+												Ram DDR4 ADATA XPG SPECTRIX D30 8G/3600 BLACK (AX4U36008G18I-SB30)
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												SSD
+											</td>
+											<td>
+												Ổ cứng SSD 256G Colorful SL500 Sata III 6Gb/s TLC
+											</td>
+										</tr>
+										<tr>
+											<td>
+												VGA
+											</td>
+											<td>
+												VGA Zotac Gaming GTX 1650 Super 4GBD GDDR6 2 Fan (ZT-T16510F-10L)
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												PSU
+											</td>
+											<td>
+												Nguồn Jetek STAR Power ST500 500W Plus + Dây Nguồn
+											</td>
+										</tr>
+										<tr>
+											<td>
+												CASE
+											</td>
+											<td>
+												Thùng máy Case 1St Player V2-A (Tặng kèm 4 Fan) RGB (Đen)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td align="center" style="position:relative;" class="chitiet_an">
+									<img src="./images/buoi7-css3/may_5.png" width="230px" style="border-radius: 5px; border: 5px solid white;">
+									<table style="position:absolute; border-radius: 5px; width: 300px; top:200px; left: -200px; border:1px dotted grey; z-index:99; overflow: scroll; height:300px;" bgcolor="white">
+										<tr>
+											<th colspan="2">
+												Cấu hình Gaming Baby 1650S I3
+											</th>
+										</tr>
+										<tr>
+											<td colspan="2" style="font-weight:bold;">
+												Cấu hình chi tiết:
+											</td>
+										</tr>
+										<tr>
+											<td>
+												MAINBOARD
+											</td>
+											<td>
+												Mainboard Asus H510M-K Prime
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												CPU
+											</td>
+											<td>
+												CPU Intel Core i3 10100F (3.60 Up to 4.30GHz, 6M, 4 Cores 8 Threads) Box Chính Hãng (Không GPU)
+											</td>
+										</tr>
+										<tr>
+											<td>
+												RAM
+											</td>
+											<td>
+												Ram DDR4 ADATA XPG SPECTRIX D30 8G/3600 BLACK (AX4U36008G18I-SB30)
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												SSD
+											</td>
+											<td>
+												Ổ cứng SSD 256G Colorful SL500 Sata III 6Gb/s TLC
+											</td>
+										</tr>
+										<tr>
+											<td>
+												VGA
+											</td>
+											<td>
+												VGA Zotac Gaming GTX 1650 Super 4GBD GDDR6 2 Fan (ZT-T16510F-10L)
+											</td>
+										</tr>
+										<tr bgcolor="lightgrey">
+											<td>
+												PSU
+											</td>
+											<td>
+												Nguồn Jetek STAR Power ST500 500W Plus + Dây Nguồn
+											</td>
+										</tr>
+										<tr>
+											<td>
+												CASE
+											</td>
+											<td>
+												Thùng máy Case 1St Player V2-A (Tặng kèm 4 Fan) RGB (Đen)
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="chi_nhanh">
+					<table width="1250px" style="font-family:arial;">
+						<tr>
+							<th colspan="3" height="50px" style="font-size:20px">
+								HỆ THỐNG CÁC SHOWROOM CỦA TIN HỌC NGÔI SAO
+							</th>
+						</tr>
+						<tr align="center">
+							<td style="background-image: url('./images/buoi7-css3/nen_do.png'); color: white; border-radius: 5px; width: 420px;">
+								★ Showroom Tân Bình
+							</td>
+							<td style="background-image: url('./images/buoi7-css3/nen_do.png'); color: white; border-radius: 5px; width: 420px;">
+								★ Showroom Quận 9
+							</td>
+							<td style="background-image: url('./images/buoi7-css3/nen_do.png'); color: white; border-radius: 5px; width: 420px;">
+								★ Showroom Bình Thạnh
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ul>
+									<li>
+										384/8 Cộng Hòa, P.13, Q Tân Bình, TP.HCM
+									</li>
+									<li>
+										0899 000 001
+									</li>
+									<li>
+										Thời gian làm việc: T2 - Chủ nhật, 08H30-21H00
+									</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li>
+										180 Lê Văn Việt, P. Tăng Nhơn Phú B, Q. 9, TP.HCM
+									</li>
+									<li>
+										0899 000 003
+									</li>
+									<li>
+										T2 - Chủ nhật, 09H00-20H00
+									</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li>
+										474 Điện Biên Phủ, P. 17, Q. Bình Thạnh, TP.HCM
+									</li>
+									<li>
+										0899 000 004
+									</li>
+									<li>
+										T2 - Chủ nhật, 08H30-21H00
+									</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="gioi_thieu">
+					<table  style="font-family:arial;">
+						<tr>
+							<td width="420px">
+								<table>
+									<tr>
+										<td width="50px" rowspan="2">
+											<img src="./images/buoi7-css3/doi_tra.png" style="vertical-align:middle; width: 80%;">
+										</td>
+										<td style="font-weight:bold; font-size: 17px;">
+											ĐỔI TRẢ DỄ DÀNG
+										</td>
+									</tr>
+									<tr>
+										<td style="color: grey; font-size: 12px;">
+											1 đổi 1 trong 7 ngày
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td width="420px">
+								<table>
+									<tr>
+										<td width="50px" rowspan="2">
+											<img src="./images/buoi7-css3/thanh_toan.png" style="vertical-align:middle; width: 80%;">
+										</td>
+										<td style="font-weight:bold; font-size: 17px;">
+											THANH TOÁN TIỆN LỢI
+										</td>
+									</tr>
+									<tr>
+										<td style="color: grey; font-size: 12px;">
+											Trả tiền mặt, CK, Trà góp 0%
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td width="420px">
+								<table>
+									<tr>
+										<td width="50px" rowspan="2">
+											<img src="./images/buoi7-css3/ho_tro.png" style="vertical-align:middle; width: 80%;">
+										</td>
+										<td style="font-weight:bold; font-size: 17px;">
+											HỖ TRỢ NHIỆT TÌNH
+										</td>
+									</tr>
+									<tr>
+										<td style="color: grey; font-size: 12px;">
+											Tư vấn, giải đáp mọi thắc mắc
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4 style="margin-top: 10px; margin-bottom: 0px;">
+									CHÍNH SÁCH CHUNG
+								</h4>
+								<ul style="list-style-type: none; padding:0px; font-size:14px; position: absolute;" class="goi_thieu_the_a">
+									<li style="height: 8px; border-top: 2px solid red; width: 100px;">
+									</li>
+									<li style="height: 24px;">
+										<a href="#" style="text-decoration:none;">
+											Chính sách trả góp
+										</a>
+									</li>
+									<li style="height: 24px;">
+										<a href="#" style="text-decoration:none;">
+											Chính sách bảo mật
+										</a>
+									</li>
+									<li style="height: 24px;">
+										<a href="#" style="text-decoration:none;">
+											Chính sách giải quyết khiếu nại
+										</a>
+									</li>
+									<li style="height: 24px;">
+										<a href="#" style="text-decoration:none;">
+											Chính sách bảo vệ thông tin cá nhân
+										</a>
+									</li>
+									<li style="height: 24px;">
+										<a href="#" style="text-decoration:none;">
+											Chính sách bảo hành
+										</a>
+									</li>
+									<li style="height: 24px;">
+										<a href="#" style="text-decoration:none;">
+											Chính sách đổi - trả hàng
+										</a>
+									</li>
+								</ul>
+							</td>
+							<td>
+								<h4 style="margin-top: 10px; margin-bottom: 0px;">
+									THÔNG TIN KHUYẾN MÃI
+								</h4>
+								<ul style="list-style-type: none; padding:0px; font-size:14px; position: absolute;" class="goi_thieu_the_a">
+									<li style="height: 8px; border-top: 2px solid red; width: 100px;">
+									</li>
+									<li style="height: 24px;">
+										<a href="#" style="text-decoration:none;">
+											Tổng hợp khuyến mãi
+										</a>
+									</li>
+									<li style="height: 24px;">
+										<a href="#" style="text-decoration:none;">
+											VGA Giảm Sâu
+										</a>
+									</li>
+								</ul>
+							</td>
+							<td>
+								<h4 style="margin-top: 10px; margin-bottom: 0px;">
+									HỖ TRỢ KHÁCH HÀNG
+								</h4>
+								<ul style="list-style-type: none; padding:0px; font-size:14px; position: absolute;" class="goi_thieu_the_a">
+									<li style="height: 8px; border-top: 2px solid red; width: 100px;">
+									</li>
+									<li style="height: 24px;">
+										<a href="#" style="text-decoration:none;">
+											Tổng hợp Hotline CSKH, phản ánh
+										</a>
+									</li>
+									<li style="height: 24px;">
+										<a href="#" style="text-decoration:none;">
+											Thông tin thanh toán
+										</a>
+									</li>
+									<li style="height: 24px;">
+										<a href="#" style="text-decoration:none;">
+											Lắp đặt phòng net
+										</a>
+									</li>
+									<li style="height: 24px;">
+										<a href="#" style="text-decoration:none;">
+											Thiết bị Mining
+										</a>
+									</li>
+								</ul>
+							</td>
+						</tr>	
+					</table>			
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
